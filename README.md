@@ -36,4 +36,4 @@ This is a YOLOv3 model that can detect 200 traffic sign categories using DFG dat
 
 ## Final Output :
 
-
+![predictions (1)](https://user-images.githubusercontent.com/87853074/131008508-58949c3b-a0cc-471f-b185-fd695ec73ba3.jpg)
