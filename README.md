@@ -23,11 +23,13 @@ This is a YOLOv3 model that can detect 200 traffic sign categories using DFG dat
 2. Change the annotation format from COCO json to YOLO txt format using the coco2yolo.py.
 3. Create a new folder Yolo_custom_model_training on Google drive and custom_data folder inside and unzip all the images and annotation files.
 4. In custom data add classes.names and classes.txt files.
-5. Refer github.com/qqwweee/keras-yolo3 to generate anchor boxes for custom_data on Anaconda.
-6. Clone the Yolov3 darknet repository. Configure the Makefile to enable training on GPU.
-7. Change the yolov3 config file after cloning the darknet. (Make changes in anchor boxes as well if generated using step 4.)
-8. Start the training process.
-9. To get mAP in the chart.png along with loss use -map tag.
+5. Create a backup folder to store the weights.
+6. Download the darknet yolov3 imagenet darknet53 weights.
+7. Refer https://github.com/qqwweee/keras-yolo3 to generate anchor boxes for custom_data on Anaconda.
+8. Clone the Yolov3 darknet repository (https://github.com/AlexeyAB/darknet.git). Configure the Makefile to enable training on GPU.
+9. Change the yolov3 config file after cloning the darknet. (Make changes in anchor boxes as well if generated using step 4.)
+10. Start the training process.
+11. To get mAP in the chart.png along with loss use -map tag.
 
 ## Test the model performance :
 1. Once the training is done predict the results. (images or video file as per your choice)
@@ -37,3 +39,11 @@ This is a YOLOv3 model that can detect 200 traffic sign categories using DFG dat
 ## Final Output :
 
 ![predictions (1)](https://user-images.githubusercontent.com/87853074/131008508-58949c3b-a0cc-471f-b185-fd695ec73ba3.jpg)
+
+## Tips:
+1. For DFG traffic sign dataset, since instances per class varied a lot (from 20 to 200 per instance in traindata set) augmented dataset was used.
+
+## References:
+1. https://github.com/AlexeyAB/darknet.git
+2. https://github.com/qqwweee/keras-yolo3
+
