@@ -27,3 +27,6 @@ This is a YOLOv3 model that can detect 200 traffic sign categories using DFG dat
 6. Clone the Yolov3 darknet repository. Configure the Makefile to enable training on GPU.
 7. Change the yolov3 config file after cloning the darknet. (Make changes in anchor boxes as well if generated using step 4.)
 8. Start the training process.
+9. Once the training is done predict the results. (images or video file as per your choice)
+10. You can even calculate the FPS using -benchmark flag.
+11. To train and test the code directly using Google Colab refer yolov3_tsr.ipynb.
