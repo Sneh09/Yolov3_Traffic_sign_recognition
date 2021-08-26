@@ -14,3 +14,14 @@ This is a YOLOv3 model that can detect 200 traffic sign categories using DFG dat
 * roughly 70% of categories with a low appearance changes and 30% with a large appearance variability.
 * Annotation format:  COCO json format
 
+## Reference from :
+* Dataset Link : https://www.vicos.si/resources/dfg/
+
+## Steps to build :
+
+1. Download the dataset and unzip the images.
+2. Change the annotation format from COCO json to YOLO txt format using the coco2yolo.py.
+3. Create a new folder Yolo_custom_model_training on Google drive and custom_data folder inside and unzip all the images and annotation files.
+4. Refer  to generate anchor for custom_data on Anaconda.
+5. Clone the Yolov3 darknet repository. Configure the make file
+6. 
