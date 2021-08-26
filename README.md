@@ -22,7 +22,8 @@ This is a YOLOv3 model that can detect 200 traffic sign categories using DFG dat
 1. Download the dataset and unzip the images.
 2. Change the annotation format from COCO json to YOLO txt format using the coco2yolo.py.
 3. Create a new folder Yolo_custom_model_training on Google drive and custom_data folder inside and unzip all the images and annotation files.
-4. Refer github.com/qqwweee/keras-yolo3 to generate anchor boxes for custom_data on Anaconda.
-5. Clone the Yolov3 darknet repository. Configure the Makefile to enable training on GPU.
-6. Change the yolov3 config file after cloning the darknet. (Make changes in anchor boxes as well if generated using step 4.)
-7. 
+4. In custom data add classes.names and classes.txt files.
+5. Refer github.com/qqwweee/keras-yolo3 to generate anchor boxes for custom_data on Anaconda.
+6. Clone the Yolov3 darknet repository. Configure the Makefile to enable training on GPU.
+7. Change the yolov3 config file after cloning the darknet. (Make changes in anchor boxes as well if generated using step 4.)
+8. Start the training process.
